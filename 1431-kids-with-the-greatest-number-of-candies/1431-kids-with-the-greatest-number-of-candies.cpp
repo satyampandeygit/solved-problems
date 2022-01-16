@@ -5,10 +5,10 @@ public:
         
         vector<bool> ans;
         
-        int n = candies.size();
         
-        for(int i=0; i<n; i++){
-            if(candies[i]+extraCandies>=maxx){
+        
+        for(auto x: candies){
+            if(x+extraCandies>=maxx){
                 ans.push_back(true);
             }else{
                 ans.push_back(false);
